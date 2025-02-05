@@ -1,12 +1,14 @@
 import './App.css';
-import { Hello } from './components/Hello';
+import Content from './components/Content';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <>
-      <Hello />
-    </>
-  )
+    <div className="font-sans">
+      <Navbar />
+      <Content />
+    </div>
+  );
 }
 
-export default App
+export default App;
