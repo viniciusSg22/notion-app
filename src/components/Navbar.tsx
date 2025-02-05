@@ -1,4 +1,4 @@
-import botpressImg from '../assets/botpress.png';
+import botpressImg from "../assets/images/botpress.png";
 
 export default function Navbar() {
     return (
@@ -6,7 +6,7 @@ export default function Navbar() {
             <div className="flex justify-between items-center w-full">
                 <div className="xl:w-1/3">
                     <a className="block max-w-max" href="#">
-                        <img className="h-16" src={botpressImg} alt="Botpress Logo"/>
+                        <img className="h-16" src={botpressImg} alt="Botpress Logo" />
                     </a>
                 </div>
                 <div className="hidden xl:block xl:w-1/3">

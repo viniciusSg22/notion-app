@@ -1,5 +1,5 @@
 import { Webchat, WebchatProvider, useClient } from "@botpress/webchat";
-import { theme } from "../themes/webchatTheme";
+import { theme } from "../styles/themes/webchatTheme";
 import '../index.css';
 
 const clientId = import.meta.env.BOTPRESS_CLIENT_ID;

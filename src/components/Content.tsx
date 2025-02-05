@@ -1,4 +1,4 @@
-import botpressImg from "../assets/botpress.png";
+import botpressImg from "../assets/images/botpress.png";
 // import ComponentWebchat from './ComponentWebchat';
 import EmbbededWebchat from "./EmbeddedWebchat";
 
