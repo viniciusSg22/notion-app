@@ -1,13 +1,24 @@
-import './styles/App.css';
-import Content from './components/Content';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/layout/Header';
+import Home from './pages/Home';
+import Footer from './components/layout/Footer';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <div className="font-sans">
-      <Navbar />
-      <Content />
-    </div>
+    <ThemeProvider>
+      <Router>
+        <div className="font-sans">
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            {/* <Route path='/login' element={<Home />} />
+          <Route path='/register' element={<Home />} /> */}
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
