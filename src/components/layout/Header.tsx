@@ -98,8 +98,8 @@ export default function Header() {
 
                 {/* Dropdown do Menu Responsivo - exibido em telas pequenas */}
                 {isOpen && (
-                    <div className="w-full lg:hidden flex flex-col">
-                        <ul className="flex flex-col font-medium p-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <div className="w-full lg:hidden flex flex-col pt-3">
+                        <ul className="flex flex-col font-medium p-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                             <li>
                                 <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">Início</a>
                             </li>
