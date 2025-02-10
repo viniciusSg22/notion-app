@@ -4,6 +4,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import botpressImg from "../../assets/icons/botpress.png";
 import userAvatar from "../../assets/icons/userAvatar.png";
 import ThemeToggle from "../common/ThemeToggle";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Header() {
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src={botpressImg} className="h-8" alt="Botpress Logo" />
+                    <img src={botpressImg} className="h-8 mix-blend-multiply" alt="Botpress Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Botpress</span>
                 </div>
 
@@ -80,7 +81,9 @@ export default function Header() {
                     ) : (
                         <div className="flex space-x-3">
                             <button className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500" onClick={() => setIsAuthenticated(true)}>Login</button>
-                            <button className="text-white px-4 py-2 rounded-lg bg-primary-700 hover:bg-primary-800 transition">Cadastro</button>
+                            <Link to="/register" className="text-white px-4 py-2 rounded-lg bg-primary-700 hover:bg-primary-800 transition">
+                                Cadastro
+                            </Link>
                         </div>
                     )}
 

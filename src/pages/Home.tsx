@@ -1,4 +1,5 @@
 import Newsletter from "../components/common/Newsletter";
+import WebchatContent from "../components/WebchatContent";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
                     </a>
                 </div>
             </div>
+            <WebchatContent />
             <Newsletter />
         </section>
     );
